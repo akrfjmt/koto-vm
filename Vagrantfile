@@ -3,8 +3,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: "/bin/sh /vagrant/setup/set-keys.sh"
   config.vm.provision "shell", inline: "/bin/sh /vagrant/setup/set-selinux-disabled.sh"
   config.vm.provision "shell", inline: "/bin/sh /vagrant/setup/docker/install-docker.sh"
-  config.vm.provision "shell", inline: "/bin/sh /vagrant/setup/docker/init-stack.sh 192.168.56.61"
-
+  config.vm.provision "shell", inline: "/bin/sh /vagrant/setup/install-git.sh"
+  
   config.vm.define "koto-vm" do |host|
     host.vm.hostname = "koto-vm"
     host.vm.network "private_network", ip: "192.168.56.61"
@@ -18,3 +18,4 @@ Vagrant.configure("2") do |config|
     end
   end
 end
+
