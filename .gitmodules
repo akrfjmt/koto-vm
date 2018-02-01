@@ -1,0 +1,3 @@
+[submodule "koto-stack"]
+	path = koto-stack
+	url = git@github.com:akrfjmt/koto-stack.git
