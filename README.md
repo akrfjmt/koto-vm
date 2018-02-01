@@ -1,4 +1,4 @@
-# koto-stack
+# koto-vm
 
 kotodとcpuminer-yescryptでソロマイニングを手軽に試すための VM です。
 
