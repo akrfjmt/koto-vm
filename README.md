@@ -11,7 +11,7 @@ kotodとcpuminer-yescryptでソロマイニングを手軽に試すための VM 
 vagrant up
 ```
 
-起動したら、 `root@192.168.56.21` に秘密鍵 `setup/id_rsa` でSSHログインできます。
+起動したら、 `root@192.168.56.61` に秘密鍵 `setup/id_rsa` でSSHログインできます。
 
 ```
 cd /vagrant
